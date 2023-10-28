@@ -45,9 +45,11 @@ if (xpDoHeroi < 1000) {
 } else {
   nivelDoHeroi = "Radiante";
 }
-console.log(`O Herói de nome ${nomeDoHeroi} está no nível de ${nivelDoHeroi}`);
 
 //## Saída
 
 //Ao final deve se exibir uma mensagem:
 //"O Herói de nome **{nome}** está no nível de **{nivel}**"
+
+console.log(`O Herói de nome ${nomeDoHeroi} está no nível de ${nivelDoHeroi}`);
+
