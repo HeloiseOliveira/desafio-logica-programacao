@@ -11,17 +11,14 @@
 
 //Crie uma variável para armazenar o nome e a quantidade de experiência (XP) de um herói, depois utilize uma //estrutura de decisão para apresentar alguma das mensagens abaixo:
 
-let nomeHeroi = Arthur
-let quantidadeXp = 9002
+// Defina o nome do herói e a quantidade de experiência (XP)
+const nomeDoHeroi = "Arthur";
+const xpDoHeroi = 9002; // Atualize o valor de acordo com a XP do herói
 
-if (quantidadeXp <=1000){ console.log("Ferro")
-} else if (quantidadeXp > 1001 && quantidadeXp < 2000){ console.log("O Herói de nome: " + " está no nível " +  " Bronze")
-} else if (quantidadeXp > 2001 && quantidadeXp <= 5000){ console.log("O Herói de nome: " + " está no nível " + "Prata")
-} else if (quantidadeXP > 6001 && quantidadeXp < 8000){ console.log("O Herói de nome: " + " está no nível " + "Platina")
-} else if (quantidadeXp > 8001 && quantidadeXp < 9000){ console.log("O Herói de nome: " + " está no nível " + "Ascendente")
-} else if (quantidadeXp > 9001 && quantidadeXp < 10000){ console.log("O Herói de nome: " + " está no nível " + "Imortal")
-} else (quantidadeXp > 10001) { console.log("O Herói de nome: " + " está no nível " + "Radiante")}
+// Variável para armazenar o nível
+let nivelDoHeroi;
 
+// Utilize a estrutura de decisão para determinar o nível com base na XP
 //Se XP for menor do que 1.000 = Ferro 
 //Se XP for entre 1.001 e 2.000 = Bronze
 //Se XP for entre 2.001 e 5.000 = Prata
@@ -30,6 +27,25 @@ if (quantidadeXp <=1000){ console.log("Ferro")
 //Se XP for entre 8.001 e 9.000 = Ascendente
 //Se XP for entre 9.001 e 10.000= Imortal
 //Se XP for maior ou igual a 10.001 = Radiante
+
+if (xpDoHeroi < 1000) {
+  nivelDoHeroi = "Ferro";
+} else if (xpDoHeroi >= 1001 && xpDoHeroi <= 2000) {
+  nivelDoHeroi = "Bronze";
+} else if (xpDoHeroi >= 2001 && xpDoHeroi <= 5000) {
+  nivelDoHeroi = "Prata";
+} else if (xpDoHeroi >= 6001 && xpDoHeroi <= 7000) {
+  nivelDoHeroi = "Ouro";
+} else if (xpDoHeroi >= 7001 && xpDoHeroi <= 8000) {
+  nivelDoHeroi = "Platina";
+} else if (xpDoHeroi >= 8001 && xpDoHeroi <= 9000) {
+  nivelDoHeroi = "Ascendente";
+} else if (xpDoHeroi >= 9001 && xpDoHeroi <= 10000) {
+  nivelDoHeroi = "Imortal";
+} else {
+  nivelDoHeroi = "Radiante";
+}
+console.log(`O Herói de nome ${nomeDoHeroi} está no nível de ${nivelDoHeroi}`);
 
 //## Saída
 
